@@ -116,14 +116,14 @@ body {
   text-transform: uppercase;
 }
 
-.services__button--red {
+.services__item-button--red {
   background-color: #fb565a;
 }
 
-.services__button--green {
+.services__item-button--green {
   background-color: #00ca74;
 }
 
-.services__button--yellow {
+.services__item-button--yellow {
   background-color: #efc84a;
 }
