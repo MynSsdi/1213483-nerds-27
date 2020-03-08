@@ -4,6 +4,7 @@ body {
   font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
+  background-color: #fff;
   color: #283136;
 }
 
@@ -248,16 +249,23 @@ b {
 
 
 .map {
+  position: relative;
   width: 1440px;
   height: 416px;
   margin: 0 auto;
+  background-color: yellow;
 }
 
 .map__address {
+  box-sizing: border-box;
+  position: absolute;
+  top: 54px;
+  left: 140px;
   width: 319px;
   height: 308px;
-  padding: 54px 77px 47px 50px;
+  padding: 54px 50px 47px 50px;
   background-color: #fff;
+  border: 1px solid #000;
 }
 
 .map__address-header {
@@ -296,4 +304,49 @@ b {
   border-radius: 3px;
   background-color: #fb565a;
   color: #ffffff;
+}
+
+.main-footer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1440px;
+  height: 217px;
+  padding-left: 140px;
+  padding-right: 356px;
+}
+
+.main-footer__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-footer__item {
+  margin-right: 12px;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+
+.main-footer__item--vk {
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.main-footer__item--fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.main-footer__item--insta {
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
