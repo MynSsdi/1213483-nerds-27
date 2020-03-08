@@ -207,3 +207,24 @@ b {
   font-size: 45px;
   line-height: 10px;
 }
+
+.company-project {
+  box-sizing: border-box;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 46px 140px 44px 140px;
+}
+
+.company-project__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  margin: 0;
+  padding: 0;
+  padding-left: 31px;
+  padding-right: 46px;
+  list-style: none;
+  border-top: 2px solid #eee;
+  border-bottom:  2px solid #eee;
+}
