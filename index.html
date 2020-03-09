@@ -11,7 +11,7 @@
     <div class="container-center">
       <header class="main-header">
           <a class="main-header__logo" href="#">
-            <img class="main-header__logo-img" src="img/nerds-logo.svg">
+            <img class="main-header__logo-image" src="img/nerds-logo.svg">
           </a>
           <nav class="main-header__nav">
             <ul class="main-header__nav-list">
@@ -26,20 +26,40 @@
       </header>
       <main>
         <section class="slider">
-          <img class="slider__image" src="" width="759" height="430">
-          <img class="slider__image" src="" width="759" height="430">
-          <img class="slider__image" src="" width="759" height="430">
-          <b class="slider__slogan">Долго, дорого, скрупулезно.</b>
-          <p class="slider__snippet">
-            Математически выверенный дизайн<br>
-            для вашего сайта или мобильного приложения.
-          </p>
-          <a class="slider__button" href="#">узнать больше</a>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+
+          <input class="visually-hidden slider__input--slide1" type="radio" id="slider__input-one" name="toggle" checked>
+          <input class="visually-hidden slider__input--slide2" type="radio" id="slider__input-two" name="toggle" >
+          <input class="visually-hidden slider__input--slide3" type="radio" id="slider__input-three" name="toggle" >
+          <div class="slider__labels">
+            <label class="slider__label slider__label--slide1" for="slider__input-one" aria-label="первый слайд"></label>
+            <label class="slider__label slider__label--slide2" for="slider__input-two"  aria-label="второй слайд"></label>
+            <label class="slider__label slider__label--slide3" for="slider__input-three"  aria-label="третий слайд"></label>
+          </div>
+          <ul class="slider__list">
+            <li class="slider__item" id="slider__one">
+              <b class="slider__item-slogan">Долго, дорого, скрупулезно.</b>
+              <p class="slider__item-snippet">Математически выверенный дизайн
+              для вашего сайта или мобильного приложения.</p>
+              <a class="slider__item-button" href="#">узнать больше</a>
+            </li>
+            <li class="slider__item" id="slider__two">
+              <b class="slider__item-slogan">Любим математику как никто другой</b>
+              <p class="slider__item-snippet">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slider__item-button" href="#">узнать больше</a>
+            </li>
+            <li class="slider__item" id="slider__three">
+              <b class="slider__item-slogan">Только ночь, только хардкор</b>
+              <p class="slider__item-snippet">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="slider__item-button" href="#">узнать больше</a>
+            </li>
           </ul>
+          <div class="slider__image">
+          </div>
+          <div class="">
+          <div class="slider__input">
+
+          </div>
+        </div>
         </section>
         <section class="services">
           <ul class="services__list">
