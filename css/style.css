@@ -8,6 +8,11 @@ body {
   color: #283136;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 b {
   color: #000;
 }
@@ -312,7 +317,7 @@ b {
   margin: 0 auto;
   box-sizing: border-box;
   width: 1440px;
-  padding: 40px 140px 76px 141px;
+  padding: 0px 140px 0px 141px;
   background-color: yellow;
 }
 
@@ -335,6 +340,7 @@ b {
 
 .studio-description__orders-item {
   margin-bottom: 35px;
+  background-color: red;
 }
 
 .studio-description__list-header {
