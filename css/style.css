@@ -13,15 +13,18 @@ b {
 }
 
 .block-center {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
 }
 
 .block-center__main {
   flex-direction: column;
 }
+
+/*Шапка*/
 
 .main-header {
   box-sizing: border-box;
@@ -88,7 +91,6 @@ b {
   justify-content: space-between;
   position: relative;
   margin: 0 auto;
-  height: 431px;
   padding-left: 140px;
   padding-right: 140px;
   color: #fff;
@@ -104,7 +106,6 @@ b {
 
 .slider__item {
   display: none;
-  padding-right: 50px;
 }
 
 .slider__item-slogan {
@@ -121,11 +122,20 @@ b {
   color: #000;
 }
 
+.slider__snippet-span {
+  padding-right: 70px;
+}
+
 .slider__item-button {
+  box-sizing: border-box;
   display: inline-block;
   width: 240px;
   height: 50px;
-  line-height: 50px;
+  margin-bottom: 80px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 53px;
+  padding-right: 55px;
   font-weight: 500;
   text-align: center;
   vertical-align: middle;
@@ -148,8 +158,8 @@ b {
 
 .slider__labels {
   position: absolute;
+  left: 536px;
   bottom: 96px;
-  left: 0;
   z-index: 10;
   font-size: 0;
 }
@@ -170,17 +180,34 @@ b {
 }
 
 .slider__images {
-  display: block;
+  align-self: bottom;
+  display: flex;
+  margin-top: 36px;
+  overflow: hidden;
+  background-color: red;
 }
 
 .slider__image {
   display: none;
+  background-color: yellow;
 }
 
 .slider__input--slide1:checked ~ .slider__images .slider__image-1,
 .slider__input--slide2:checked ~ .slider__images .slider__image-2,
 .slider__input--slide3:checked ~ .slider__images .slider__image-3 {
   display: block;
+}
+
+.slider__input--slide1:checked ~ .slider__images .slider__images {
+  padding-right: 31px;
+}
+
+.slider__input--slide2:checked ~ .slider__images .slider__images {
+  padding-right: 1px;
+}
+
+.slider__input--slide3:checked ~ .slider__images .slider__images {
+  padding-right: 0px;
 }
 
 .slider__input--slide1:checked ~ .slider__list #slider__item-slide1,
