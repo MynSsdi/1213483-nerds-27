@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс rev2.0</title>
+    <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -10,6 +10,7 @@
   <body>
     <div class="container-center">
       <header class="main-header">
+        <div class="block-center">
           <a class="main-header__logo" href="#">
             <img class="main-header__logo-image" src="img/nerds-logo.svg">
           </a>
@@ -23,120 +24,126 @@
             </ul>
           </nav>
           <a class="main-header__basket" href="#">Корзина</a>
+        </div>
       </header>
       <main>
-        <section class="slider">
-          <input class="slider__input slider__input--slide1" type="radio" id="slider__input-one" name="toggle" checked>
-          <input class="slider__input slider__input--slide2" type="radio" id="slider__input-two" name="toggle" >
-          <input class="slider__input slider__input--slide3" type="radio" id="slider__input-three" name="toggle" >
-          <div class="slider__labels">
-            <label class="slider__label slider__label--slide1" for="slider__input-one" aria-label="первый слайд"></label>
-            <label class="slider__label slider__label--slide2" for="slider__input-two"  aria-label="второй слайд"></label>
-            <label class="slider__label slider__label--slide3" for="slider__input-three"  aria-label="третий слайд"></label>
-          </div>
-          <ul class="slider__list">
-            <li class="slider__item" id="slider__one">
-              <b class="slider__item-slogan">Долго, дорого, скрупулезно.</b>
-              <p class="slider__item-snippet">Математически выверенный дизайн
-              для вашего сайта или мобильного приложения.</p>
-              <a class="slider__item-button" href="#">узнать больше</a>
-            </li>
-            <li class="slider__item" id="slider__two">
-              <b class="slider__item-slogan">Любим математику как никто другой</b>
-              <p class="slider__item-snippet">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="slider__item-button" href="#">узнать больше</a>
-            </li>
-            <li class="slider__item" id="slider__three">
-              <b class="slider__item-slogan">Только ночь, только хардкор</b>
-              <p class="slider__item-snippet">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="slider__item-button" href="#">узнать больше</a>
-            </li>
-          </ul>
-          <div class="slider__image">
-          </div>
-        </section>
-        <section class="services">
-          <ul class="services__list">
-            <li class="services__item">
-              <img class="services__item-image" src="img/service1.jpg" width="300" height="146">
-              <h3 class="services__item-header" >веб-сайты</h3>
-              <p class="services__item-description">Мир никогда не будет прежним
-              после того как увидит ваш сайт</p>
-              <a class="services__item-button services__item-button--red" href="#">заказать</a>
-            </li>
-            <li class="services__item">
-              <img class="services__item-image" src="img/service2.jpg" width="300" height="146">
-              <h3 class="services__item-header" >приложения</h3>
-              <p class="services__item-description">Покорите топ-10 приложений в
-              AppStore и Google Play</p>
-              <a class="services__item-button  services__item-button--green" href="#">заказать</a>
-            </li>
-            <li class="services__item">
-              <img class="services__item-image" src="img/service3.jpg" width="300" height="146">
-              <h3 class="services__item-header" >презентации</h3>
-              <p class="services__item-description">Вы даже не подозреваете
-              насколько вы изумительны!</p>
-              <a class="services__item-button  services__item-button--yellow" href="#">заказать</a>
-            </li>
-          </ul>
-        </section>
-        <section class="studio-description">
-          <section class="studio-description__left">
-            <b class="studio-description__slogan">Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
-            <p class="studio-description__snippet">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-            превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <ul class="studio-description__list-orders">
-              <li class="studio-description__orders-item"><b class="studio-description__list-header">выполняем заказы на разработку</b></li>
-              <li class="studio-description__orders-item">Веб-сайтов любой сложности</li>
-              <li class="studio-description__orders-item">Мобильных приложений для IOS и Android</li>
-              <li class="studio-description__orders-item">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
-          </section>
-          <section class="studio-description__right">
-            <img class="studio-description__image" src="img/nerds-description.jpg" width="360px" height="208px">
-            <b class="studio-description__statistics">с 2004 года любим точность во всем:</b>
-            <ul class="studio-description__list-statistics">
-              <li  class="studio-description__statistics-item">
-                <b  class="studio-description__item-count">146<sup>&#37;</sup></b>
-                <p  class="studio-description__item-parameter">Уровень самоотдачи</p>
-              </li>
-              <li  class="studio-description__statistics-item">
-                <b  class="studio-description__item-count">100<sup>&#37;</sup></b>
-                <p  class="studio-description__item-parameter">Соблюдение сроков</p>
-              </li>
-              <li  class="studio-description__statistics-item">
-                <b  class="studio-description__item-count">50<sup>&#37;</sup></b>
-                <p  class="studio-description__item-parameter">Минимальная предоплата</p>
-              </li>
-            </ul>
+          <section class="slider">
+            <div class="block-center">
+              <input class="slider__input slider__input--slide1" type="radio" id="slider__input-slide1" name="toggle" checked>
+              <input class="slider__input slider__input--slide2" type="radio" id="slider__input-slide2" name="toggle" >
+              <input class="slider__input slider__input--slide3" type="radio" id="slider__input-slide3" name="toggle" >
+              <div class="slider__labels">
+                <label class="slider__label slider__label--slide1" for="slider__input-slide1" aria-label="первый слайд"></label>
+                <label class="slider__label slider__label--slide2" for="slider__input-slide2"  aria-label="второй слайд"></label>
+                <label class="slider__label slider__label--slide3" for="slider__input-slide3"  aria-label="третий слайд"></label>
+              </div>
+              <ul class="slider__list">
+                <li class="slider__item" id="slider__item-slide1">
+                  <b class="slider__item-slogan">Долго, дорого, скрупулезно.</b>
+                  <p class="slider__item-snippet">Математически выверенный дизайн
+                  для вашего сайта или мобильного приложения.</p>
+                  <a class="slider__item-button" href="#">узнать больше</a>
+                </li>
+                <li class="slider__item" id="slider__item-slide2">
+                  <b class="slider__item-slogan">Любим математику как никто другой</b>
+                  <p class="slider__item-snippet">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                  <a class="slider__item-button" href="#">узнать больше</a>
+                </li>
+                <li class="slider__item" id="slider__item-slide3">
+                  <b class="slider__item-slogan">Только ночь, только хардкор</b>
+                  <p class="slider__item-snippet">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                  <a class="slider__item-button" href="#">узнать больше</a>
+                </li>
+              </ul>
+              <div class="slider__images">
+                <img class="slider__image slider__image-1" src="img/slide1.png" width="698px" height="413px">
+                <img class="slider__image slider__image-2" src="img/slide2.png" width="663px" height="430px">
+                <img class="slider__image slider__image-3" src="img/slide3.png" width="759px" height="411px">
+              </div>
             </section>
-          </section>
-          <section class="company-partners">
-            <ul class="company-partners__list">
-              <li  class="company-partners__item">
-                <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="company-partners__item-image" src="img/html-academy.jpg" width="198px" height="68px"></a>
-              </li>
-              <li class="company-partners__item">
-                <img class="company-partners__item-image" src="img/borodinski-barbershop.jpg" width="209px" height="90px">
-              </li>
-              <li  class="company-partners__item">
-                <img class="company-partners__item-image" src="img/pink.jpg" width="185px" height="52px">
-              </li>
-              <li  class="company-partners__item">
-                <img class="company-partners__item-image" src="img/mishka.jpg" width="173px" height="84px">
-              </li>
-            </ul>
-          </section>
-          <section class="map">
-            <img class="map__image" src="img/map.png" width="1440px" height="416px">
-            <img class="map__marker" src="img/map-marker.png" width="231px" heoght="190px">
-            <section class="map__address">
-              <b class="map__address-header">nerds design studio</b>
-              <p class="map__address-description">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              <a href="#" class="map__address-link">тел. +7 (812) 275-75-75</a>
-              <button class="map__address-button">напишите нам</button>
+            <section class="services">
+              <ul class="services__list">
+                <li class="services__item">
+                  <img class="services__item-image" src="img/service1.jpg" width="300" height="146">
+                  <h3 class="services__item-header" >веб-сайты</h3>
+                  <p class="services__item-description">Мир никогда не будет прежним
+                  после того как увидит ваш сайт</p>
+                  <a class="services__item-button services__item-button--red" href="#">заказать</a>
+                </li>
+                <li class="services__item">
+                  <img class="services__item-image" src="img/service2.jpg" width="300" height="146">
+                  <h3 class="services__item-header" >приложения</h3>
+                  <p class="services__item-description">Покорите топ-10 приложений в
+                  AppStore и Google Play</p>
+                  <a class="services__item-button  services__item-button--green" href="#">заказать</a>
+                </li>
+                <li class="services__item">
+                  <img class="services__item-image" src="img/service3.jpg" width="300" height="146">
+                  <h3 class="services__item-header" >презентации</h3>
+                  <p class="services__item-description">Вы даже не подозреваете
+                  насколько вы изумительны!</p>
+                  <a class="services__item-button  services__item-button--yellow" href="#">заказать</a>
+                </li>
+              </ul>
             </section>
-          </section>
+            <section class="studio-description">
+              <section class="studio-description__left">
+                <b class="studio-description__slogan">Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
+                <p class="studio-description__snippet">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+                превыше креатива. Работаем не покладая рук, как роботы.</p>
+                <ul class="studio-description__list-orders">
+                  <li class="studio-description__orders-item"><b class="studio-description__list-header">выполняем заказы на разработку</b></li>
+                  <li class="studio-description__orders-item">Веб-сайтов любой сложности</li>
+                  <li class="studio-description__orders-item">Мобильных приложений для IOS и Android</li>
+                  <li class="studio-description__orders-item">Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+              </section>
+              <section class="studio-description__right">
+                <img class="studio-description__image" src="img/nerds-description.jpg" width="360px" height="208px">
+                <b class="studio-description__statistics">с 2004 года любим точность во всем:</b>
+                <ul class="studio-description__list-statistics">
+                  <li  class="studio-description__statistics-item">
+                    <b  class="studio-description__item-count">146<sup>&#37;</sup></b>
+                    <p  class="studio-description__item-parameter">Уровень самоотдачи</p>
+                  </li>
+                  <li  class="studio-description__statistics-item">
+                    <b  class="studio-description__item-count">100<sup>&#37;</sup></b>
+                    <p  class="studio-description__item-parameter">Соблюдение сроков</p>
+                  </li>
+                  <li  class="studio-description__statistics-item">
+                    <b  class="studio-description__item-count">50<sup>&#37;</sup></b>
+                    <p  class="studio-description__item-parameter">Минимальная предоплата</p>
+                  </li>
+                </ul>
+                </section>
+              </section>
+              <section class="company-partners">
+                <ul class="company-partners__list">
+                  <li  class="company-partners__item">
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="company-partners__item-image" src="img/html-academy.jpg" width="198px" height="68px"></a>
+                  </li>
+                  <li class="company-partners__item">
+                    <img class="company-partners__item-image" src="img/borodinski-barbershop.jpg" width="209px" height="90px">
+                  </li>
+                  <li  class="company-partners__item">
+                    <img class="company-partners__item-image" src="img/pink.jpg" width="185px" height="52px">
+                  </li>
+                  <li  class="company-partners__item">
+                    <img class="company-partners__item-image" src="img/mishka.jpg" width="173px" height="84px">
+                  </li>
+                </ul>
+              </section>
+              <section class="map">
+                <img class="map__image" src="img/map.png" width="1440px" height="416px">
+                <img class="map__marker" src="img/map-marker.png" width="231px" heoght="190px">
+                <section class="map__address">
+                  <b class="map__address-header">nerds design studio</b>
+                  <p class="map__address-description">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                  <a href="#" class="map__address-link">тел. +7 (812) 275-75-75</a>
+                  <button class="map__address-button">напишите нам</button>
+                </section>
+              </div>
+              </section>
       </main>
       <footer class="main-footer">
         <section class="main-footer__social">

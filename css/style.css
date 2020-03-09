@@ -12,28 +12,23 @@ b {
   color: #000;
 }
 
-/*.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
-}*/
-
-.container_center {
+.block-center {
+  display: flex;
+  justify-content: space-between;
   width: 1440px;
   margin: 0 auto;
 }
 
+.block-center__main {
+  flex-direction: column;
+}
+
 .main-header {
-  display: flex;
   box-sizing: border-box;
-  margin: 0 auto;
-  width: 1160px;
   padding-top: 49px;
   padding-left: 140px;
   padding-right: 140px;
   background-color: #eee;
-  justify-content: space-between;
 }
 
 .main-header__logo-image {
@@ -70,7 +65,7 @@ b {
 }
 
 .main-header__link--active {
-  border-bottom: 2px slid background-color: #fb565a;
+  border-bottom: 2px solid background-color: #fb565a;
 }
 
 .main-header__basket::before {
@@ -93,7 +88,6 @@ b {
   justify-content: space-between;
   position: relative;
   margin: 0 auto;
-  width: 1440px;
   height: 431px;
   padding-left: 140px;
   padding-right: 140px;
@@ -103,21 +97,18 @@ b {
 
 .slider__list {
   display: flex;
-  overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 376px;
   list-style: none;
-  background-color: green;
 }
 
-.slider__image {
-  background-color: blue;
+.slider__item {
+  display: none;
+  padding-right: 50px;
 }
 
 .slider__item-slogan {
   display: inline-block;
-  width: 400px;
   margin-top: 85px;
   margin-bottom: 28px;
   font-size: 55px;
@@ -126,7 +117,6 @@ b {
 }
 
 .slider__item-snippet {
-  width: 361px;
   margin-bottom: 42px;
   color: #000;
 }
@@ -175,32 +165,40 @@ b {
   cursor: pointer;
 }
 
-.slider__item {
-  display: none;
-}
-
 .slider__input {
   display: none;
 }
 
-.slider__input--slide1:checked ~ .slider__image {
-  background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
-  padding-right: 31px;
-}
-
-.slider__input--slide2:checked ~ .slider__image {
-  background-image: url("../img/slide2.png");
-}
-
-.slider__input--slide3:checked ~ .slider__image {
-  background-image: url("../img/slide3.png");
-}
-
-.slider__input--slide1:checked ~ .slider__list #slider__one,
-.slider__input--slide2:checked ~ .slider__list #slider__two,
-.slider__input--slide3:checked ~ .slider__list #slider__three {
+.slider__images {
   display: block;
+}
+
+.slider__image {
+  display: none;
+}
+
+.slider__input--slide1:checked ~ .slider__images .slider__image-1,
+.slider__input--slide2:checked ~ .slider__images .slider__image-2,
+.slider__input--slide3:checked ~ .slider__images .slider__image-3 {
+  display: block;
+}
+
+.slider__input--slide1:checked ~ .slider__list #slider__item-slide1,
+.slider__input--slide2:checked ~ .slider__list #slider__item-slide2,
+.slider__input--slide3:checked ~ .slider__list #slider__item-slide3 {
+  display: block;
+}
+
+.slider__input--slide1:checked ~ .slider__list #slider__item-slide1 {
+  width: 378px;
+}
+
+.slider__input--slide2:checked ~ .slider__list #slider__item-slide2 {
+  width: 515px;
+}
+
+.slider__input--slide3:checked ~ .slider__list #slider__item-slide3 {
+  width: 408px;
 }
 
 .slider__input--slide1:checked ~ .slider__labels .slider__label--slide1::after,
@@ -219,6 +217,8 @@ b {
   border-radius: 50%;
   background-color: transparent;
 }
+
+/*Услуги*/
 
 .services {
   box-sizing: border-box;
