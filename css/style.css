@@ -137,11 +137,8 @@ b {
   width: 240px;
   height: 50px;
   margin-bottom: 80px;
-  padding-top: 16px;
-  padding-bottom: 15px;
-  padding-left: 53px;
-  padding-right: 55px;
   font-weight: 500;
+  line-height: 50px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -185,16 +182,14 @@ b {
 }
 
 .slider__images {
-  align-self: bottom;
-  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   margin-top: 36px;
-  overflow: hidden;
-  background-color: red;
 }
 
 .slider__image {
   display: none;
-  background-color: yellow;
 }
 
 .slider__input--slide1:checked ~ .slider__images .slider__image-1,
@@ -203,15 +198,18 @@ b {
   display: block;
 }
 
-.slider__input--slide1:checked ~ .slider__images .slider__images {
+.slider__input--slide1:checked ~ .slider__images {
+  margin-top: 36px;
   padding-right: 31px;
 }
 
-.slider__input--slide2:checked ~ .slider__images .slider__images {
+.slider__input--slide2:checked ~ .slider__images {
+  margin-top: 19px;
   padding-right: 1px;
 }
 
-.slider__input--slide3:checked ~ .slider__images .slider__images {
+.slider__input--slide3:checked ~ .slider__images {
+  margin-top: 38px;
   padding-right: 0px;
 }
 
@@ -230,7 +228,7 @@ b {
 }
 
 .slider__input--slide3:checked ~ .slider__list #slider__item-slide3 {
-  width: 408px;
+  width: 413px;
 }
 
 .slider__input--slide1:checked ~ .slider__labels .slider__label--slide1::after,
@@ -255,7 +253,7 @@ b {
 .services {
   box-sizing: border-box;
   width: 1440px;
-  padding: 80px 200px 80px 140px;
+  padding: 80px 200px 0px 140px;
   margin: 0 auto;
 }
 
@@ -312,13 +310,18 @@ b {
   background-color: #efc84a;
 }
 
+/*Студия*/
+
 .studio-description {
   display: flex;
   margin: 0 auto;
   box-sizing: border-box;
   width: 1440px;
   padding: 0px 140px 0px 141px;
-  background-color: yellow;
+}
+
+.studio-description__left {
+  margin-top: 80px;
 }
 
 .studio-description__slogan {
@@ -328,7 +331,6 @@ b {
 
 .studio-description__snippet {
   margin-top: 35px;
-  margin-bottom: 47px;
 }
 
 .studio-description__list-orders,
@@ -338,9 +340,12 @@ b {
   list-style: none;
 }
 
-.studio-description__orders-item {
-  margin-bottom: 35px;
-  background-color: red;
+.studio-description__list-orders {
+  margin-top: 47px;
+}
+
+.studio-description__orders-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .studio-description__list-header {
@@ -359,16 +364,16 @@ b {
 }
 
 .studio-description__right {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
 
 .studio-description__image {
-  margin-bottom: 41px;
 }
 
 .studio-description__statistics {
-  margin-top: 41px;
+  margin-top: 47px;
   text-transform: uppercase;
 }
 
@@ -379,20 +384,27 @@ b {
 }
 
 .studio-description__statistics-item {
-  margin-bottom: 27px;
+  margin-right: 27px;
+
 }
 
 .studio-description__item-count {
-  position: relative;
   font-size: 45px;
   line-height: 10px;
 }
+
+.studio-description__item-parameter {
+  margin-top: 27px;
+  line-height: 18px;
+}
+
+/*Партнёры*/
 
 .company-partners {
   box-sizing: border-box;
   width: 1440px;
   margin: 0 auto;
-  padding: 46px 140px 44px 140px;
+  padding: 76px 140px 80px 140px;
 }
 
 .company-partners__list {
@@ -432,7 +444,6 @@ b {
   width: 1440px;
   height: 416px;
   margin: 0 auto;
-  background-color: yellow;
 }
 
 .map__address {
@@ -444,7 +455,6 @@ b {
   height: 308px;
   padding: 54px 50px 47px 50px;
   background-color: #fff;
-  border: 1px solid #000;
 }
 
 .map__address-header {
@@ -455,25 +465,27 @@ b {
 }
 
 .map__address-description,
-.map__address-link {
+.map__address-tel {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
 }
 
 .map__address-description {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-.map__address-link {
+.map__address-tel {
   display: block;
   margin-bottom: 37px;
   text-decoration: none;
 }
 
 .map__address-button {
+  box-sizing: border-box;
+  padding: 5px;
   width: 219px;
-  height: 50px;
+  min-height: 50px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -490,6 +502,8 @@ b {
   top: 89px;
   right: 389px;
 }
+
+/*Футер*/
 
 .main-footer {
   box-sizing: border-box;
@@ -534,6 +548,14 @@ b {
   background-image: url("../img/insta-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.main-footer__slogan {
+  font-size: 36px;
+}
+
+.main-footer__sale {
+  margin-top: 10px;
 }
 
 /*КАТАЛОГ*/
