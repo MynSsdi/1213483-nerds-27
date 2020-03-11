@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   background-color: #fff;
@@ -771,7 +771,7 @@ button {
 }
 
 .price__bar {
-  width: 70%;
+  width: 60%;
   height: 2px;
   background: #00ca74;
 }
@@ -791,38 +791,42 @@ button {
 }
 
 .price__toggle-min {
-  left: 50px;
+  left: 19px;
 }
 
 .price__toggle-max {
-  left: 110px;
+  left: 151px;
 }
 
 .price-count {
+  display: flex;
   font-size: 0;
 }
 
 .price__label-min {
-  margin-right: 7px;
-  display: inline-block;
+  width: 50%;
+  margin-right: 22px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price__label-max {
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .price__input {
-  width: 60px;
-  padding: 8px 10px;
+  box-sizing: border-box;
+  border: 0;
+  width: 80px;
+  height: 38px;
+  padding-left: 15px;
   margin-left: 10px;
-
-  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
-}
-
-.price__label-max {
-  text-align: right;
+  background-color: #eee;
 }
 
 /*Раздел Сетка*/
@@ -856,6 +860,10 @@ button {
   display: none;
 }
 
+.net__item-label {
+  color: #283136;
+}
+
 .net__item-label::before {
   margin-right: 10px;
   display: inline-block;
@@ -866,10 +874,15 @@ button {
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
 }
 
 .net__item-input:checked ~ .net__item-label::before {
   background-image: url("../img/radio-on.svg");
+}
+
+.net__item-input:hover ~ .net__item-label::before {
+  opacity: 1;
 }
 
 /*Раздел Особенности*/
@@ -912,10 +925,15 @@ button {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
 }
 
 .features__item-input:checked ~ .features__item-label::before {
   background-image: url("../img/checkbox-on.svg");
+}
+
+.features__item-input:hover ~ .features__item-label::before {
+  opacity: 1;
 }
 
 /*Кнопка*/
@@ -941,10 +959,7 @@ button {
 .catalog__button:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
-}
-
-.catalog__button:active .catalog__buton-span {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /*Блок main - правая часть экрана*/
@@ -1044,6 +1059,7 @@ button {
 
 .catalog__item {
   position: relative;
+  z-index: 10;
   margin-bottom: 33px;
 }
 
@@ -1170,6 +1186,7 @@ button {
 .catalog-pages__list {
   display: flex;
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
   list-style: none;
 }
