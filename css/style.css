@@ -585,7 +585,7 @@ button {
 
 .map__address-header {
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -1314,7 +1314,7 @@ button {
 /*Модальные окна*/
 
 .modal-feedback {
-  display: none;
+  display: block;
   box-sizing: border-box;
   position: absolute;
   left: 100px;
