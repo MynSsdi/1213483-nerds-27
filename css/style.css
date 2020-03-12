@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   background-color: #fff;
@@ -48,6 +48,17 @@ button {
   background-color: #eee;
 }
 
+.main-header__center {
+  display: flex;
+  justify-content: flex-start;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header__logo {
+  margin-right: 201px;
+}
+
 .main-header__logo-image {
   display: block;
 }
@@ -62,7 +73,11 @@ button {
 
 .main-header__nav,
 .main-header__basket {
-  margin-top: 34px;
+  margin-top: 30px;
+}
+
+.main-header__nav {
+  margin-right: 244px;
 }
 
 .main-header__nav-list {
@@ -134,8 +149,9 @@ button {
 }
 
 .slider__item-slogan {
+  font-family: "Roboto", Arial, sans-serif;
   display: inline-block;
-  margin-top: 85px;
+  margin-top: 75px;
   margin-bottom: 28px;
   font-size: 55px;
   line-height: 55px;
@@ -143,8 +159,8 @@ button {
 }
 
 .slider__item-snippet {
-  margin-bottom: 42px;
-  padding-right: 10px;
+  margin-bottom: 40px;
+  padding-right: 19px;
   color: #000;
 }
 
@@ -183,7 +199,7 @@ button {
 .slider__labels {
   position: absolute;
   left: 536px;
-  bottom: 96px;
+  top: 317px;
   z-index: 10;
   font-size: 0;
 }
@@ -207,7 +223,6 @@ button {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 36px;
 }
 
 .slider__image {
@@ -221,17 +236,17 @@ button {
 }
 
 .slider__input--slide1:checked ~ .slider__images {
-  margin-top: 36px;
+  margin-top: 18px;
   padding-right: 31px;
 }
 
 .slider__input--slide2:checked ~ .slider__images {
-  margin-top: 19px;
+  margin-top: 0px;
   padding-right: 1px;
 }
 
 .slider__input--slide3:checked ~ .slider__images {
-  margin-top: 38px;
+  margin-top: 20px;
   padding-right: 0px;
 }
 
@@ -297,15 +312,16 @@ button {
 }
 
 .services__item-header {
-  margin-top: 26px;
+  margin-top: 19px;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .services__item-description {
-  margin-top: 26px;
-  margin-bottom: 35px;
+  margin-top: 15px;
+  margin-bottom: 31px;
+  padding-right: 25px;
 }
 
 .services__item-button {
@@ -371,10 +387,13 @@ button {
   box-sizing: border-box;
   width: 1440px;
   padding: 0px 140px 0px 141px;
+  margin-bottom: -2px;
 }
 
 .studio-description__left {
-  margin-top: 80px;
+  margin-top: 73px;
+  margin-right: 150px;
+  width: 650px;
 }
 
 .studio-description__slogan {
@@ -383,7 +402,7 @@ button {
 }
 
 .studio-description__snippet {
-  margin-top: 35px;
+  margin-top: 33px;
 }
 
 .studio-description__list-orders,
@@ -394,11 +413,11 @@ button {
 }
 
 .studio-description__list-orders {
-  margin-top: 47px;
+  margin-top: 39px;
 }
 
 .studio-description__orders-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .studio-description__list-header {
@@ -422,16 +441,16 @@ button {
   flex-direction: column;
 }
 
-.studio-description__image {
-}
-
 .studio-description__statistics {
-  margin-top: 47px;
+  margin-top: 36px;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 .studio-description__list-statistics {
-  margin-top: 49px;
+  margin-top: 60px;
   display: flex;
 }
 
@@ -448,11 +467,16 @@ button {
 .studio-description__count-sup {
   position: absolute;
   top: 18px;
-  transform: scale(0.8);
+  left: 70px;
+  transform: scale(0.7);
+}
+
+.studio-description__count-sup3 {
+  left: 45px;
 }
 
 .studio-description__item-parameter {
-  margin-top: 27px;
+  margin-top: 20px;
   line-height: 18px;
 }
 
@@ -467,16 +491,20 @@ button {
 
 .company-partners__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   height: 180px;
   margin: 0;
   padding: 0;
   padding-left: 31px;
-  padding-right: 46px;
+  padding-right: 31px;
   list-style: none;
   border-top: 2px solid #eee;
   border-bottom:  2px solid #eee;
+}
+
+.company-partners__item {
+  position: relative;
 }
 
 .company-partners__item-image {
@@ -493,6 +521,7 @@ button {
 }
 
 .company-partners__item:not(:last-child)::after {
+  position: absolute;
   margin-left: 50px;
   display: inline-block;
   content: "";
@@ -502,6 +531,39 @@ button {
   background-color: #eee;
 }
 
+.company-partners__item--1::after {
+  top: 2px;
+  left: 198px;
+}
+
+.company-partners__item--2::after {
+  top: 17px;
+  left: 203px;
+}
+
+.company-partners__item--3::after {
+  top: 0px;
+  left: 191px;
+}
+
+.company-partners__item--1 {
+  margin-top: 12px;
+}
+
+.company-partners__item--2 {
+  margin-left: 97px;
+  margin-top: 2px;
+}
+
+.company-partners__item--3 {
+  margin-left: 103px;
+  margin-top: 2px;
+}
+
+.company-partners__item--4 {
+  margin-left: 121px;
+  margin-top: 8px;
+}
 
 .map {
   position: relative;
@@ -517,14 +579,16 @@ button {
   left: 140px;
   width: 319px;
   height: 308px;
-  padding: 54px 50px 47px 50px;
+  padding: 50px 50px 47px 50px;
   background-color: #fff;
 }
 
 .map__address-header {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
   font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
   text-transform: uppercase;
 }
 
@@ -536,7 +600,7 @@ button {
 }
 
 .map__address-description {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .map__address-tel {
@@ -592,7 +656,7 @@ button {
   width: 1440px;
   height: 217px;
   padding-left: 140px;
-  padding-right: 356px;
+  padding-right: 336px;
 }
 
 .main-footer__list {
@@ -703,12 +767,19 @@ button {
   opacity: 0.3;
 }
 
+.main-footer__bonus {
+  margin-top: 5px;
+}
+
 .main-footer__slogan {
   font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
 }
 
 .main-footer__sale {
-  margin-top: 10px;
+  margin-top: 9px;
+  font-size: 16px;
 }
 
 /*КАТАЛОГ*/
