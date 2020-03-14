@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс 2.0</title>
+    <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -12,7 +12,7 @@
       <header class="main-header">
         <div class="main-header__center">
           <a class="main-header__logo" href="#">
-            <img class="main-header__logo-image" src="img/nerds-logo.svg">
+            <img class="main-header__logo-image" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
           </a>
           <nav class="main-header__nav">
             <ul class="main-header__nav-list">
@@ -27,7 +27,9 @@
         </div>
       </header>
       <main>
+          <h1 class="visible-hidden">Студия Nerds</h1>
           <section class="slider">
+            <h2 class="visible-hidden">Слайдеры</h2>
             <div class="block-center">
               <input class="slider__input slider__input--slide1" type="radio" id="slider__input-slide1" name="toggle" checked>
               <input class="slider__input slider__input--slide2" type="radio" id="slider__input-slide2" name="toggle" >
@@ -56,31 +58,32 @@
                 </li>
               </ul>
               <ul class="slider__images">
-                <li class="slider__images-item"><img class="slider__image slider__image-1" src="img/slide1.png" width="698px" height="413px"></li>
-                <li class="slider__images-item"><img class="slider__image slider__image-2" src="img/slide2.png" width="663px" height="430px"></li>
-                <li class="slider__images-item"><img class="slider__image slider__image-3" src="img/slide3.png" width="759px" height="411px"></li>
+                <li class="slider__images-item"><img class="slider__image slider__image-1" src="img/slide1.png" width="698" height="413" alt="слайдер1"></li>
+                <li class="slider__images-item"><img class="slider__image slider__image-2" src="img/slide2.png" width="663" height="430" alt="слайдер2"></li>
+                <li class="slider__images-item"><img class="slider__image slider__image-3" src="img/slide3.png" width="759" height="411" alt="слайдер3"></li>
               </ul>
             </div>
           </section>
             <section class="services">
+              <h2 class="visible-hidden">Услуги</h2>
               <ul class="services__list">
                 <li class="services__item">
-                  <img class="services__item-image" src="img/service1.jpg" width="300" height="146">
+                  <img class="services__item-image" src="img/service1.jpg" width="300" height="146" alt="услуга создание веб-сайтов">
                   <h3 class="services__item-header" >веб-сайты</h3>
                   <p class="services__item-description">Мир никогда не будет прежним
                   после того как увидит ваш сайт</p>
                   <a class="services__item-button services__item-button--red" href="#">заказать</a>
                 </li>
                 <li class="services__item">
-                  <img class="services__item-image" src="img/service2.jpg" width="300" height="146">
+                  <img class="services__item-image" src="img/service2.jpg" width="300" height="146" alt="услуга создание приложений">
                   <h3 class="services__item-header" >приложения</h3>
                   <p class="services__item-description">Покорите топ-10 приложений в
                   AppStore и Google Play</p>
                   <a class="services__item-button  services__item-button--green" href="#">заказать</a>
                 </li>
                 <li class="services__item">
-                  <img class="services__item-image" src="img/service3.jpg" width="300" height="146">
-                  <h3 class="services__item-header" >презентации</h3>
+                  <img class="services__item-image" src="img/service3.jpg" width="300" height="146" alt="услуга создание презентаций">
+                  <h3 class="services__item-header">презентации</h3>
                   <p class="services__item-description">Вы даже не подозреваете
                   насколько&nbsp;вы&nbsp;изумительны!</p>
                   <a class="services__item-button  services__item-button--yellow" href="#">заказать</a>
@@ -88,7 +91,9 @@
               </ul>
             </section>
             <section class="studio-description">
+              <h2 class="visible-hidden">Описание студии</h2>
               <section class="studio-description__left">
+                <h3 class="visible-hidden">Преимущества студии 1</h3>
                 <b class="studio-description__slogan">Мы &#8212; маленькая, но гордая дизайн&nbsp;-&nbsp;студия&nbsp;из&nbsp;Краснодара</b>
                 <p class="studio-description__snippet">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
                 превыше&nbsp;креатива. Работаем не покладая рук, как роботы.</p>
@@ -100,7 +105,8 @@
               </ul>
               </section>
               <section class="studio-description__right">
-                <img class="studio-description__image" src="img/nerds-description.jpg" width="360px" height="208px">
+                <h3 class="visible-hidden">Преимущства студии 2</h3>
+                <img class="studio-description__image" src="img/nerds-description.jpg" width="360" height="208" alt="логотип">
                 <b class="studio-description__statistics">с 2004 года любим точность во всем:</b>
                 <ul class="studio-description__list-statistics">
                   <li  class="studio-description__statistics-item">
@@ -119,25 +125,28 @@
                 </section>
               </section>
               <section class="company-partners">
+                <h2 class="visible-hidden">Партнёры компании</h2>
                 <ul class="company-partners__list">
                   <li  class="company-partners__item company-partners__item--1">
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="company-partners__item-image" src="img/html-academy.png" width="198px" height="68px"></a>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="company-partners__item-image" src="img/html-academy.png" width="198" height="68" alt="партнёр хтмл академия"></a>
                   </li>
                   <li class="company-partners__item company-partners__item--2">
-                    <img class="company-partners__item-image" src="img/borodinski-barbershop.png" width="209px" height="90px">
+                    <img class="company-partners__item-image" src="img/borodinski-barbershop.png" width="209" height="90" alt="партнёр барбершоп Бородинский">
                   </li>
                   <li  class="company-partners__item company-partners__item--3">
-                    <img class="company-partners__item-image" src="img/pink.png" width="185px" height="52px">
+                    <img class="company-partners__item-image" src="img/pink.png" width="185" height="52" alt="партнёр Пинк">
                   </li>
                   <li  class="company-partners__item company-partners__item--4">
-                    <img class="company-partners__item-image" src="img/mishka.png" width="173px" height="84px">
+                    <img class="company-partners__item-image" src="img/mishka.png" width="173" height="84" alt="партнёр Мишка">
                   </li>
                 </ul>
               </section>
               <section class="map">
-                <img class="map__image" src="img/map.png" width="1440px" height="416px">
-                <img class="map__marker" src="img/map-marker.png" width="231px" heoght="190px">
+                <h2 class="visible-hidden">Карта</h2>
+                <img class="map__image" src="img/map.png" width="1440" height="416" alt="изображение карты">
+                <img class="map__marker" src="img/map-marker.png" width="231" height="190" alt="маркер карты">
                 <section class="map__address">
+                  <h3 class="visible-hidden">Адрес студии</h3>
                   <b class="map__address-header">nerds design studio</b>
                   <p class="map__address-description">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</p>
                   <a href="#" class="map__address-tel">тел. +7 (812) 275-75-75</a>
@@ -171,6 +180,7 @@
       </main>
       <footer class="main-footer">
         <section class="main-footer__social">
+          <h2 class="visible-hidden">Социальные сети</h2>
           <ul class="main-footer__list">
             <li class="main-footer__item main-footer__item--vk"><a href="#" aria-label="вконтакте"></a></li>
             <li class="main-footer__item main-footer__item--fb"><a href="#" aria-label="фейсбук"></a></li>
@@ -178,9 +188,11 @@
           </ul>
         </section>
         <section class="main-footer__bonus">
+          <h2 class="visible-hidden">Акции</h2>
           <b class="main-footer__slogan">Давайте дружить, это выгодно!</b>
           <p class="main-footer__sale">Скидка 10% для друзей из социальных сетей.</p>
         </section>
       </footer>
+    </div>
   </body>
 </html>
