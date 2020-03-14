@@ -656,10 +656,6 @@ button {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.map__address-button:active ~ .modal-feedback {
-  display: block;
-}
-
 .map__marker {
   position: absolute;
   top: 89px;
