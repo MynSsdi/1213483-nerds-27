@@ -89,6 +89,10 @@ button {
   list-style: none;
 }
 
+.main-header__nav-item {
+    position: relative;
+}
+
 .main-header__nav-link,
 .main-header__basket {
   text-decoration: none;
@@ -107,8 +111,15 @@ button {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-header__link--active {
-  border-bottom: 2px solid background-color: #fb565a;
+.main-header__nav-item--active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fb565a;
+}
+
+
+.main-header__basket--active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fb565a;
 }
 
 .main-header__basket::before {
@@ -151,6 +162,7 @@ button {
 .slider__item-slogan {
   font-family: "Roboto", Arial, sans-serif;
   display: inline-block;
+  vertical-align: baseline;
   margin-top: 75px;
   margin-bottom: 28px;
   font-size: 55px;
@@ -207,6 +219,7 @@ button {
 .slider__label {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   width: 18px;
   height: 18px;
   margin-right: 17px;
@@ -320,7 +333,7 @@ button {
 
 .services__item-description {
   margin-top: 15px;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
   padding-right: 25px;
 }
 
@@ -791,8 +804,9 @@ button {
 .header-page__header {
   margin: 0 auto;
   color: black;
-  padding-top: 82px;
-  padding-bottom: 116px;
+  padding-top: 78px;
+  padding-bottom: 108px;
+  padding-left: -5px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -828,9 +842,9 @@ button {
 
 .price__controls {
   position: relative;
-  height: 41px;
-  margin-bottom: 15px;
-  padding-top: 39px;
+  height: 42px;
+  margin-bottom: 14px;
+  padding-top: 38px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
@@ -838,20 +852,21 @@ button {
 }
 
 .price__scale {
+  margin-top: 1px;
   height: 2px;
   background: #d7dcde;
 }
 
 .price__bar {
-  width: 60%;
+  width: 64%;
   height: 2px;
   background: #00ca74;
 }
 
 .price__toggle {
   position: absolute;
-  top: 31px;
-  left: 0;
+  top: 29px;
+  left: 0px;
   width: 4px;
   height: 4px;
   padding: 0;
@@ -863,11 +878,11 @@ button {
 }
 
 .price__toggle-min {
-  left: 19px;
+  left: 18px;
 }
 
 .price__toggle-max {
-  left: 151px;
+  left: 160px;
 }
 
 .price-count {
@@ -886,6 +901,7 @@ button {
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
+  margin-left: 7px;
 }
 
 .price__input {
@@ -901,16 +917,23 @@ button {
   background-color: #eee;
 }
 
+.price__input-right {
+  position: relative;
+  left: 1px;
+  margin-left: 11px;
+}
+
 /*Раздел Сетка*/
 
 .net {
   margin: 0;
-  margin-top: 50px;
+  margin-top: 54px;
   padding: 0;
   border: 0;
 }
 
 .net__legend {
+  margin-bottom: 13px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -925,7 +948,11 @@ button {
 
 .net__list-item {
   font-size: 16px;
-  line-height: 40px;
+  line-height: 20px;
+}
+
+.net__list-item:not(:last-of-type) {
+  margin-bottom: 15px;
 }
 
 .net__item-input {
@@ -937,7 +964,8 @@ button {
 }
 
 .net__item-label::before {
-  margin-right: 10px;
+  margin-right: 11px;
+  margin-left: 1px;
   display: inline-block;
   content: "";
   width: 25px;
@@ -961,12 +989,14 @@ button {
 
 .features {
   margin: 0;
-  margin-top: 40px;
+  margin-top: 44px;
+  margin-bottom: -8px;
   padding: 0;
   border: 0;
 }
 
 .features__legend {
+  margin-bottom: 13px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -980,7 +1010,20 @@ button {
 }
 
 .features__item {
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.features__item {
+  margin-bottom: 17px;
+}
+
+.features__item:nth-child(2) {
+  margin-bottom: 18px;
+}
+
+.features__item:nth-child(4) {
+  margin-bottom: 16px;
 }
 
 .features__item-input {
@@ -988,7 +1031,8 @@ button {
 }
 
 .features__item-label::before {
-  margin-right: 13px;
+  margin-left: 1px;
+  margin-right: 8px;
   display: inline-block;
   content: "";
   width: 27px;
@@ -1011,7 +1055,7 @@ button {
 /*Кнопка*/
 
 .catalog__button {
-  margin-top: 40px;
+  margin-top: 39px;
   border: 0;
   box-sizing: border-box;
   width: 260px;
@@ -1038,6 +1082,7 @@ button {
 
 .catalog__right {
   margin-left: 140px;
+  margin-bottom: 87px;
 }
 
 /*Сортировка*/
@@ -1050,18 +1095,19 @@ button {
   justify-content: space-between;
 }
 
+.catalog__form-legend {
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .catalog__form-list {
+  box-sizing: border-box;
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.catalog__form-legend {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .catalog__form-button {
@@ -1089,25 +1135,24 @@ button {
   opacity: 1;
 }
 
+.catalog__form-item--1 {
+  margin-right: 25px;
+}
+
+.catalog__form-item--2 {
+  margin-right: 25px;
+}
+
+.catalog__form-item--3 {
+  margin-right: 45px;
+}
+
 .catalog__form-item--4 {
   margin-right: 18px;
 }
 
 .catalog__form-item--5 {
   margin-right: 7px;
-}
-
-
-.catalog__form-item--1 {
-  margin-right: 26px;
-}
-
-.catalog__form-item--2 {
-  margin-right: 27px;
-}
-
-.catalog__form-item--3 {
-  margin-right: 48px;
 }
 
 /*Список шаблонов*/
@@ -1144,7 +1189,6 @@ button {
   position: relative;
 }
 
-
 .catalog__item-position::before {
   display: block;
   content: "";
@@ -1159,7 +1203,7 @@ button {
 .catalog__item-div {
   display: none;
   box-sizing: border-box;
-  padding-top:30px;
+  padding-top: 27px;
   padding-bottom: 43px;
   position: absolute;
   bottom: 0;
@@ -1168,6 +1212,53 @@ button {
   height: 231px;
   background-color: #eee;
   text-align: center;
+}
+
+.catalog__item-header {
+  margin-bottom: 14px;
+}
+
+.catalog__header-link {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+}
+
+.catalog__header-link:hover {
+  color: #fb565a;
+}
+
+.catalog__header-link:active {
+  color: #000;
+  opacity: 0.3;
+}
+
+.catalog__item-description {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666;
+}
+
+.catalog__item-link {
+  position: relative;
+  left: -1px;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: 500;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #fb565a;
 }
 
 .catalog__item-description--padding1 {
@@ -1200,47 +1291,6 @@ button {
   padding-right: 74px;
 }
 
-.catalog__header-link {
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000;
-  text-decoration: none;
-}
-
-.catalog__header-link:hover {
-  color: #fb565a;
-}
-
-.catalog__header-link:active {
-  color: #000;
-  opacity: 0.3;
-}
-
-.catalog__item-description {
-  margin-bottom: 25px;
-  font-size: 16px;
-  line-height: 18px;
-  color: #666;
-}
-
-.catalog__item-link {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 50px;
-  font-weight: 500;
-  vertical-align: middle;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #fb565a;
-}
-
 .catalog__item-link:hover {
   background-color: #e74246;
 }
@@ -1265,10 +1315,13 @@ button {
 
 /*Пагинация страниц*/
 
+.catalog__pages {
+  margin-top: 60px;
+}
+
 .catalog-pages__list {
   display: flex;
   margin: 0;
-  margin-bottom: 60px;
   padding: 0;
   list-style: none;
 }
@@ -1386,18 +1439,18 @@ button {
 
 .modal-feedback__input:invalid {
   border-color: #e74246;
+  color: #e74246;;
 }
 
 .modal-feedback__input:focus::placeholder {
   color: #444444;
 }
 
-.modal-feedback__input:invalid::placeholder {
-  color: #e74246;
-}
-
 .modal-feedback__letter-textarea {
   outline: 0;
+  box-sizing: border-box;
+  width: 760px;
+  height: 118px;
   margin-top: 10px;
   margin-bottom: 35px;
   padding: 12px 15px;

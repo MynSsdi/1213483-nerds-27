@@ -11,19 +11,19 @@
     <main>
       <header class="main-header">
         <div class="block-center">
-          <a class="main-header__logo" href="#">
+          <a class="main-header__logo" href="index.html">
             <img class="main-header__logo-image" src="img/nerds-logo.svg">
           </a>
           <nav class="main-header__nav">
             <ul class="main-header__nav-list">
-              <li class="main-header__nav-item">
+              <li class="main-header__nav-item  main-header__nav-item--active">
                 <a class="main-header__nav-link main-header__link--active" href="#">студия</a></li>
-              <li class="main-header__nav-item"><a class="main-header__nav-link" href="#">клиенты</a></li>
-              <li class="main-header__nav-item"><a class="main-header__nav-link" href="#">магазин</a></li>
-              <li class="main-header__nav-item"><a class="main-header__nav-link" href="#">контакты</a></li>
+              <li class="main-header__nav-item  main-header__nav-item--active"><a class="main-header__nav-link" href="#">клиенты</a></li>
+              <li class="main-header__nav-item  main-header__nav-item--active"><a class="main-header__nav-link" href="#">магазин</a></li>
+              <li class="main-header__nav-item  main-header__nav-item--active"><a class="main-header__nav-link" href="#">контакты</a></li>
             </ul>
           </nav>
-          <a class="main-header__basket" href="#">Корзина</a>
+          <a class="main-header__basket  main-header__basket--active" href="#">Корзина</a>
         </div>
       </header>
       <main>
@@ -47,8 +47,8 @@
                     <div class="price__toggle price__toggle-max"></div>
                   </div>
                   <div class="price__count">
-                    <label class="price__label price__label-min">от <input class="price__input" name="min__price" type="number" value="0"></label>
-                    <label class="price__label price__label-max">до <input class="price__input" name="max__price" type="number" value="15000"></label>
+                    <label class="price__label price__label-min">от<input class="price__input price__input-left" name="min__price" type="number" value="0"></label>
+                    <label class="price__label price__label-max">до<input class="price__input price__input-right" name="max__price" type="number" value="15000"></label>
                   </div>
                 </div>
               </fieldset>
@@ -127,7 +127,7 @@
                       <img class="catalog__item-image" src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Седона">
                       <div class="catalog__item-div">
                         <h3 class="catalog__item-header"><a class="catalog__header-link" href="#">sedona</a></h3>
-                        <p class="catalog__item-description catalog__item-description--padding1">Информационный сайт для туристов</p>
+                        <p class="catalog__item-description catalog__item-description--padding1">Информационныйсайт для&nbsp;туристов</p>
                         <a class="catalog__item-link" href="#">9 900 руб.</a>
                       </div>
                     </div>
@@ -137,7 +137,7 @@
                       <img class="catalog__item-image" src="img/img-pink.jpg" width="360px" height="576px" alt="Шаблон Пинк">
                       <div class="catalog__item-div">
                         <h3 class="catalog__item-header"><a class="catalog__header-link" href="#">pink app</a></h3>
-                        <p class="catalog__item-description catalog__item-description--padding2">Продуктовый лендинг приложения для iOS и Android</p>
+                        <p class="catalog__item-description catalog__item-description--padding2">Продуктовый лендинг приложения&nbsp;для&nbsp;iOS&nbsp;и&nbsp;Android</p>
                         <a class="catalog__item-link" href="#">9 900 руб.</a>
                       </div>
                     </div>
@@ -147,7 +147,7 @@
                       <img class="catalog__item-image" src="img/img-barbershop.jpg" width="360px" height="576px" alt="Шаблон Бородинский">
                       <div class="catalog__item-div">
                         <h3 class="catalog__item-header"><a class="catalog__header-link" href="#">barbershop</a></h3>
-                        <p class="catalog__item-description catalog__item-description--padding3">Сайт салона красоты. Для мужчин, да.</p>
+                        <p class="catalog__item-description catalog__item-description--padding3">Сайт салона красоты. Для&nbsp;мужчин,&nbsp;да.</p>
                         <a class="catalog__item-link" href="#">9 900 руб.</a>
                       </div>
                     </div>
@@ -157,7 +157,7 @@
                       <img class="catalog__item-image" src="img/img-mishka.jpg" width="360px" height="576px" alt="Шаблон Мишка">
                       <div class="catalog__item-div">
                         <h3 class="catalog__item-header"><a class="catalog__header-link" href="#">mishka</a></h3>
-                        <p class="catalog__item-description catalog__item-description--padding4">Интернет-магазин вязаных игрушек</p>
+                        <p class="catalog__item-description catalog__item-description--padding4">Интернет-магазин вязаных&nbsp;игрушек</p>
                         <a class="catalog__item-link" href="#">9 900 руб.</a>
                       </div>
                     </div>
@@ -177,8 +177,8 @@
                       <img class="catalog__item-image" src="img/img-kvast.jpg" width="360px" height="576px" alt="Шаблон Кваст">
                       <div class="catalog__item-div">
                         <h3 class="catalog__item-header"><a class="catalog__header-link" href="#">кваст</a></h3>
-                        <p class="catalog__item-description catalog__item-description--padding6">Промо-сайт производителя крафтового кваса</p>
-                        <a class="catalog__item-link" href="#">9 900 руб.</a>
+                        <p class="catalog__item-description catalog__item-description--padding6">Промо-сайт производителя крафтового&nbsp;кваса</p>
+                        <a class="catalog__item-link" href="#">9&nbsp;900&nbsp;руб.</a>
                       </div>
                     </div>
                   </li>
@@ -199,7 +199,7 @@
             <img class="map__marker" src="img/map-marker.png" width="231px" heoght="190px">
             <section class="map__address">
               <b class="map__address-header">nerds design studio</b>
-              <p class="map__address-description">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p class="map__address-description">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</p>
               <a href="#" class="map__address-tel">тел. +7 (812) 275-75-75</a>
               <button class="map__address-button">напишите нам</button>
               <div class="modal-feedback">
