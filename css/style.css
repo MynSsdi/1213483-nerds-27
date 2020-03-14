@@ -968,6 +968,7 @@ button {
 }
 
 .net__item-label {
+  cursor: pointer;
   color: #283136;
 }
 
@@ -991,6 +992,7 @@ button {
 
 .net__item-input:hover ~ .net__item-label::before {
   opacity: 1;
+  cursor: pointer;
 }
 
 /*Раздел Особенности*/
@@ -1038,6 +1040,11 @@ button {
   display: none;
 }
 
+.features__item-label {
+  color: #283136;
+  cursor: pointer;
+}
+
 .features__item-label::before {
   margin-left: 1px;
   margin-right: 8px;
@@ -1058,6 +1065,7 @@ button {
 
 .features__item-input:hover ~ .features__item-label::before {
   opacity: 1;
+  cursor: pointer;
 }
 
 /*Кнопка*/
@@ -1193,6 +1201,10 @@ button {
   margin-right: 40px;
 }
 
+.catalog__item-cart {
+  display: block;
+}
+
 .catalog__item-position {
   position: relative;
 }
@@ -1245,6 +1257,9 @@ button {
 }
 
 .catalog__item-description {
+  overflow: hidden;
+  min-height: 34px;
+  max-height: 36px;
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 18px;
@@ -1270,31 +1285,37 @@ button {
 }
 
 .catalog__item-description--padding1 {
+  width: 176px;
   padding-left: 93px;
   padding-right: 91px;
 }
 
 .catalog__item-description--padding2 {
+  width: 225px;
   padding-left: 68px;
   padding-right: 66px;
 }
 
 .catalog__item-description--padding3 {
+  width: 165px;
   padding-left: 95px;
   padding-right: 93px;
 }
 
 .catalog__item-description--padding4 {
+  width: 136px;
   padding-left: 110px;
   padding-right: 108px;
 }
 
 .catalog__item-description--padding5 {
+  width: 214px;
   padding-left: 73px;
   padding-right: 73px;
 }
 
 .catalog__item-description--padding6 {
+  width: 207px;
   padding-left: 73px;
   padding-right: 74px;
 }
