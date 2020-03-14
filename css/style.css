@@ -1397,7 +1397,6 @@ button {
 /*Модальные окна*/
 
 .modal-feedback {
-  display: block;
   box-sizing: border-box;
   position: absolute;
   left: 100px;
@@ -1541,4 +1540,8 @@ button {
 
 .modal-feedback__image:active {
   opacity: 0.1;
+}
+
+.modal-show {
+  display: block;
 }
