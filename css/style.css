@@ -8,10 +8,7 @@ body {
   color: #283136;
 }
 
-header {
-  padding:0;
-  margin: 0;
-}
+
 
 p {
   margin: 0;
@@ -42,8 +39,11 @@ button {
 .block-center {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 1160px;
+  min-width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -149,13 +149,11 @@ button {
 /*Слайдер*/
 
 .slider {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin: 0 auto;
-  padding-left: 140px;
-  padding-right: 140px;
   color: #fff;
   background-color: #eee;
 }
@@ -165,6 +163,7 @@ button {
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 .slider__item {
@@ -222,7 +221,7 @@ button {
 
 .slider__labels {
   position: absolute;
-  left: 536px;
+  left: 556px;
   top: 317px;
   z-index: 10;
   font-size: 0;
@@ -245,6 +244,7 @@ button {
 }
 
 .slider__images {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -260,7 +260,7 @@ button {
   display: block;
 }
 
-.slider__input--slide1:checked ~ .slider__images {
+/*.slider__input--slide1:checked ~ .slider__images {
   margin-top: 18px;
   padding-right: 31px;
 }
@@ -273,6 +273,20 @@ button {
 .slider__input--slide3:checked ~ .slider__images {
   margin-top: 20px;
   padding-right: 0px;
+}*/
+
+
+.slider__input--slide1:checked ~ .slider__images {
+  margin-top: 18px;
+  left: 53px;
+}
+
+.slider__input--slide2:checked ~ .slider__images {
+  margin-top: 0px;
+}
+
+.slider__input--slide3:checked ~ .slider__images {
+  margin-top: 20px;
 }
 
 .slider__input--slide1:checked ~ .slider__list #slider__item-slide1,
@@ -417,18 +431,17 @@ button {
 
 .studio-description__left {
   margin-top: 73px;
-  margin-right: 150px;
   min-width: 650px;
 }
 
 .studio-description__slogan {
   font-size: 45px;
   line-height: 45px;
-  background-color: green;
 }
 
 .studio-description__snippet {
   margin-top: 33px;
+  padding-right: 50px;
 }
 
 .studio-description__list-orders,
@@ -504,6 +517,8 @@ button {
 .studio-description__item-parameter {
   margin-top: 20px;
   line-height: 18px;
+  word-wrap: break-word;
+  width: 107px;
 }
 
 /*Партнёры*/
