@@ -620,10 +620,6 @@ button {
   background-position: 50% 0;
 }
 
-.map__iframe {
-   border: 0;
-}
-
 .map__wrapper {
   position: relative;
   width: 1160px;
