@@ -633,7 +633,7 @@ button {
   box-sizing: border-box;
   position: absolute;
   top: 54px;
-  left: 140px;
+  left: 0px;
   width: 319px;
   height: 308px;
   padding: 50px 50px 47px 50px;
@@ -702,7 +702,7 @@ button {
 
 .main-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
   width: 1160px;
@@ -820,7 +820,8 @@ button {
 }
 
 .main-footer__bonus {
-  margin-top: 5px;
+  margin-top: 3px;
+  margin-left: 127px;
 }
 
 .main-footer__slogan {
@@ -841,11 +842,11 @@ button {
 }
 
 .header-page__header {
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 217px;
   color: black;
   padding-top: 78px;
   padding-bottom: 108px;
-  padding-left: -5px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -1129,7 +1130,7 @@ button {
 
 .catalog__right {
   margin-left: 140px;
-  margin-bottom: 87px;
+  margin-bottom: 60px;
 }
 
 /*Сортировка*/
@@ -1203,6 +1204,10 @@ button {
 }
 
 /*Список шаблонов*/
+
+.catalog__product {
+  margin-bottom: 27px;
+}
 
 .catalog__list {
   display: flex;
