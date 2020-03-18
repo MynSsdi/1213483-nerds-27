@@ -328,8 +328,8 @@ button {
 
 .services {
   box-sizing: border-box;
-  width: 1440px;
-  padding: 80px 200px 0px 140px;
+  width: 1160px;
+  padding-top: 80px;
   margin: 0 auto;
 }
 
@@ -342,12 +342,13 @@ button {
   border-bottom: 2px solid #eee;
 }
 
-.services__item {
-  margin-right: 100px;
+.services__item:first-child{
+  margin-right: ;
 }
 
-.services__item:last-child {
-  margin-right: 0;
+.services__item {
+  width: 300px;
+  margin-right: 100px;
 }
 
 .services__item-header {
@@ -360,7 +361,6 @@ button {
 .services__item-description {
   margin-top: 15px;
   margin-bottom: 32px;
-  padding-right: 25px;
 }
 
 .services__item-button {
@@ -424,8 +424,7 @@ button {
   display: flex;
   margin: 0 auto;
   box-sizing: border-box;
-  width: 1440px;
-  padding: 0px 140px 0px 141px;
+  width: 1160px;
   margin-bottom: -2px;
 }
 
@@ -496,7 +495,7 @@ button {
 }
 
 .studio-description__statistics-item {
-  margin-right: 7px;
+  margin-right: 12px;
 }
 
 .studio-description__item-count {
@@ -508,8 +507,8 @@ button {
 .studio-description__count-sup {
   position: absolute;
   top: 18px;
-  left: 70px;
-  transform: scale(0.7);
+  left: 75px;
+  transform: scale(0.75);
 }
 
 .studio-description__count-sup3 {
@@ -527,9 +526,10 @@ button {
 
 .company-partners {
   box-sizing: border-box;
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
-  padding: 76px 140px 80px 140px;
+  padding-top: 76px;
+  padding-bottom: 80px;
 }
 
 .company-partners__list {
