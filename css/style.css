@@ -614,12 +614,14 @@ button {
   align-items: center;
   position: relative;
   min-width: 1160px;
-  padding-left: 20px;
-  padding-right: 20px;
   height: 416px;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
+}
+
+.map__iframe {
+   border: 0;
 }
 
 .map__wrapper {
