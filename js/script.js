@@ -1,4 +1,3 @@
-<script>
 var link = document.querySelector(".map__address-button");
 
 var popup = document.querySelector(".modal-feedback");
@@ -59,4 +58,3 @@ if (evt.keyCode === 27) {
   }
 }
 });
-</script>

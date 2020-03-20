@@ -8,6 +8,17 @@ body {
   color: #283136;
 }
 
+.main-header__logo:focus,
+.main-header__basket:focus,
+.main-header__nav-link:focus,
+.map__address-tel:focus,
+.button:focus,
+.main-footer__item:focus,
+.company-partners__item-link:focus,
+.map__address-button:focus {
+    outline: 3px solid blue;
+}
+
 .paragraph {
   margin: 0;
   padding: 0;
@@ -675,13 +686,15 @@ body {
 }
 
 .map__address-button {
+  cursor: pointer;
+  display: block;
   box-sizing: border-box;
   padding: 5px;
   width: 219px;
-  min-height: 50px;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 40px;
   font-weight: 500;
+  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
   border: 0;
@@ -732,6 +745,10 @@ body {
   height: 79px;
   border-radius: 50%;
   background-color: #e1e1e1;
+}
+
+.main-footer__item-link {
+  display: block;
 }
 
 .main-footer__item--vk {
@@ -1035,6 +1052,15 @@ body {
   cursor: pointer;
 }
 
+.net__item-input:disabled ~ .net__item-label::before {
+  opacity: 0.1;
+}
+
+.net__item-input:disabled ~ .net__item-label {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+
 /*Раздел Особенности*/
 
 .features {
@@ -1106,6 +1132,14 @@ body {
 .features__item-input:hover ~ .features__item-label::before {
   opacity: 1;
   cursor: pointer;
+}
+
+.features__item-input:disabled ~ .features__item-label::before {
+  opacity: 0.1;
+}
+
+.features__item-input:disabled ~ .features__item-label {
+  color: rgba(40, 49, 54, 0.3);
 }
 
 /*Кнопка*/
@@ -1250,7 +1284,9 @@ body {
 }
 
 .catalog__item-position {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .catalog__item-position::before {

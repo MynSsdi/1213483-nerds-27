@@ -128,16 +128,16 @@
                 <h2 class="visible-hidden">Партнёры компании</h2>
                 <ul class="company-partners__list">
                   <li  class="company-partners__item company-partners__item--1">
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="company-partners__item-image" src="img/html-academy.png" width="198" height="68" alt="партнёр хтмл академия"></a>
+                    <a class="company-partners__item-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="company-partners__item-image" src="img/html-academy.png" width="198" height="68" alt="партнёр хтмл академия"></a>
                   </li>
                   <li class="company-partners__item company-partners__item--2">
-                    <img class="company-partners__item-image" src="img/borodinski-barbershop.png" width="209" height="90" alt="партнёр барбершоп Бородинский">
+                    <a class="company-partners__item-link" href="#"><img class="company-partners__item-image" src="img/borodinski-barbershop.png" width="209" height="90" alt="партнёр барбершоп Бородинский"></a>
                   </li>
                   <li  class="company-partners__item company-partners__item--3">
-                    <img class="company-partners__item-image" src="img/pink.png" width="185" height="52" alt="партнёр Пинк">
+                    <a class="company-partners__item-link" href="#"><img class="company-partners__item-image" src="img/pink.png" width="185" height="52" alt="партнёр Пинк"></a>
                   </li>
                   <li  class="company-partners__item company-partners__item--4">
-                    <img class="company-partners__item-image" src="img/mishka.png" width="173" height="84" alt="партнёр Мишка">
+                    <a class="company-partners__item-link" href="#"><img class="company-partners__item-image" src="img/mishka.png" width="173" height="84" alt="партнёр Мишка"></a>
                   </li>
                 </ul>
               </section>
@@ -150,7 +150,7 @@
                       <b class="slogan map__address-header">nerds design studio</b>
                       <p class="paragraph map__address-description">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</p>
                       <a href="tel:+78122757575" class="map__address-tel">тел. +7 (812) 275-75-75</a>
-                      <button class="button map__address-button">напишите нам</button>
+                      <a class="button map__address-button">напишите нам</a>
                       <div class="modal-feedback  visible-hidden">
                         <form class="modal-feedback__form" method="get" action="https://echo.htmlacademy.ru">
                           <fieldset class="modal-feedback__form-fieldset">
@@ -182,9 +182,9 @@
         <section class="main-footer__social">
           <h2 class="visible-hidden">Социальные сети</h2>
           <ul class="main-footer__list">
-            <li class="main-footer__item main-footer__item--vk"><a href="#" aria-label="вконтакте"></a></li>
-            <li class="main-footer__item main-footer__item--fb"><a href="#" aria-label="фейсбук"></a></li>
-            <li class="main-footer__item main-footer__item--insta"><a href="#" aria-label="инстаграмм"></a></li>
+            <li class="main-footer__item main-footer__item--vk"><a class="main-footer__item-link" href="#" aria-label="вконтакте"></a></li>
+            <li class="main-footer__item main-footer__item--fb"><a class="main-footer__item-link" href="#" aria-label="фейсбук"></a></li>
+            <li class="main-footer__item main-footer__item--insta"><a class="main-footer__item-link" href="#" aria-label="инстаграмм"></a></li>
           </ul>
         </section>
         <section class="main-footer__bonus">
@@ -194,67 +194,6 @@
         </section>
       </footer>
     </div>
-    <script>
-  var link = document.querySelector(".map__address-button");
-
-  var popup = document.querySelector(".modal-feedback");
-
-  var close = popup.querySelector(".modal-feedback__image");
-
-  var login = popup.querySelector("[name=name__user]");
-  var password = popup.querySelector("[name=email__user]");
-
-  var form = popup.querySelector("modal-feedback__form");
-
-  var isStorageSupport = true;
-  var storage = "";
-
-  try {
-    storage = localStorage.getItem("login");
-  } catch (err) {
-    isStorageSupport = false;
-  }
-
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-
-    if (storage) {
-      login.value = storage;
-      password.focus();
-    } else {
-      login.focus();
-    }
-  });
-
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
-
-  form.addEventListener("submit", function (evt) {
-    if (!login.value || !password.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("login", login.value);
-      }
-    }
-  });
-
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
-    }
-  });
-</script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
