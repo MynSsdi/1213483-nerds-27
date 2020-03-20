@@ -8,14 +8,8 @@ body {
   color: #283136;
 }
 
-.main-header__logo:focus,
-.main-header__basket:focus,
-.main-header__nav-link:focus,
-.map__address-tel:focus,
-.button:focus,
-.main-footer__item:focus,
-.company-partners__item-link:focus,
-.map__address-button:focus {
+:focus,
+.button:focus {
     outline: 3px solid blue;
 }
 
