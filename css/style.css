@@ -8,11 +8,6 @@ body {
   color: #283136;
 }
 
-:focus,
-.button:focus {
-    outline: 3px solid blue;
-}
-
 .paragraph {
   margin: 0;
   padding: 0;
@@ -29,10 +24,6 @@ body {
 .header3 {
   margin: 0;
   padding: 0;
-}
-
-.button {
-  outline: 0;
 }
 
 .visible-hidden {
@@ -1616,4 +1607,9 @@ body {
 
 .modal-show {
   display: block;
+}
+
+:focus,
+.button:focus {
+    outline: 3px solid blue;
 }
