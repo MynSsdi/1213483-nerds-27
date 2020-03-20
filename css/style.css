@@ -8,27 +8,25 @@ body {
   color: #283136;
 }
 
-
-
-p {
+.paragraph {
   margin: 0;
   padding: 0;
 }
 
-b {
+.slogan {
   color: #000;
 }
 
-legend {
+.caption {
   color: #000;
 }
 
-h3 {
+.header3 {
   margin: 0;
   padding: 0;
 }
 
-button {
+.button {
   outline: 0;
 }
 
