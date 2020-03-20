@@ -1610,6 +1610,7 @@ body {
 }
 
 :focus,
-.button:focus {
+.button:focus,
+.main-footer__list:focus {
     outline: 3px solid blue;
 }
