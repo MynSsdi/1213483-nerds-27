@@ -63,6 +63,7 @@ body {
 
 .main-header__logo {
   margin-right: 201px;
+  z-index: 10;
 }
 
 .main-header__logo-image {
@@ -80,6 +81,7 @@ body {
 .main-header__nav,
 .main-header__basket {
   margin-top: 30px;
+  z-index: 10;
 }
 
 .main-header__nav {
@@ -1505,7 +1507,6 @@ body {
 }
 
 .modal-feedback__input {
-  outline: 0;
   margin-top: 10px;
   box-sizing: border-box;
   padding: 0 15px;
@@ -1525,6 +1526,7 @@ body {
 
 .modal-feedback__input:focus {
   border-color: #000;
+  outline: 0;
 }
 
 .modal-feedback__input:invalid {
@@ -1537,7 +1539,6 @@ body {
 }
 
 .modal-feedback__letter-textarea {
-  outline: 0;
   box-sizing: border-box;
   width: 760px;
   height: 118px;
@@ -1553,6 +1554,7 @@ body {
 
 .modal-feedback__letter-textarea:focus {
   border-color: #000;
+  outline: 0;
 }
 
 .modal-feedback__letter-textarea:invalid {
