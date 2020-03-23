@@ -7,7 +7,7 @@ var close = popup.querySelector(".modal-feedback__image");
 var login = popup.querySelector("[name=name__user]");
 var password = popup.querySelector("[name=email__user]");
 
-var form = popup.querySelector("modal-feedback__form");
+var form = popup.querySelector(".modal-feedback__form");
 
 var isStorageSupport = true;
 var storage = "";

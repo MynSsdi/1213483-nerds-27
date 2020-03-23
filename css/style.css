@@ -1394,7 +1394,6 @@ body {
 
 .catalog__item:hover .catalog__item-position {
   box-shadow: 0px 6px 15px 0 rgba(0, 1, 1, 0.25);
-  border: solid 1px rgba(77, 77, 77, 0.1);
 }
 
 .catalog__item:hover .catalog__item-position::before {
@@ -1461,9 +1460,9 @@ body {
 
 .modal-feedback {
   box-sizing: border-box;
-  position: absolute;
-  left: 100px;
-  top: -191px;
+  position: fixed;
+  left: 282px;
+  top: 0px;
   padding: 73px 100px 84px 100px;
   width: 960px;
   height: 590px;
@@ -1613,4 +1612,16 @@ body {
 .button:focus,
 .main-footer__list:focus {
     outline: 3px solid blue;
+}
+
+@keyframes bounce {
+0% { transform: translateY(-2000px); }
+70% { transform: translateY(30px); }
+90% { transform: translateY(-10px); }
+100% { transform: translateY(0); }
+}
+.modal-show {
+display: block;
+animation-name: bounce;
+animation-duration: 0.6s;
 }
