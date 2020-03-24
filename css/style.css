@@ -1197,6 +1197,8 @@ body {
   line-height: 18px;
   text-transform: uppercase;
   background-color: transparent;
+  text-decoration: none;
+  color: #000;
   opacity: 0.3;
 }
 
